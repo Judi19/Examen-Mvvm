@@ -8,7 +8,12 @@ public class TotalPagar : ContentPage
 		{
 			Children = {
 				new Label { HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center, Text = "Welcome to .NET MAUI!"
-				}
+
+
+                 double total = subtotal - descuento;
+                 labelTotal.Text = total.ToString("C");
+
+                }
 			}
 		};
 	}

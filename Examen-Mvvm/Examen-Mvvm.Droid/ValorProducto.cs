@@ -1,15 +1,14 @@
-namespace Examen_Mvvm;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public class ValorProducto : ContentPage
+namespace Examen_Mvvm.Models
 {
-	public ValorProducto()
-	{
-		Content = new VerticalStackLayout
-		{
-			Children = {
-				new Label { HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center, Text = "Welcome to .NET MAUI!"
-				}
-			}
-		};
-	}
+    public class Producto
+    {
+        public decimal Precio { get; set; }
+    }
+
 }
